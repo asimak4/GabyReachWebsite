@@ -1,48 +1,71 @@
+/* Services page specific styles */
 .services {
   min-height: 100vh;
 }
 
-/* Hero section styles handled by global .hero-section class */
-.hero-section .card {
+/* Hero section */
+.services .hero-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.intro-content .card {
+  max-width: 900px;
+  text-align: left;
   background-color: var(--white);
   color: var(--text-color);
 }
 
+/* Services grid sections */
 .services-grid {
-  padding: 3rem 0;
+  padding: 4rem 0;
   background-color: var(--background-color);
 }
 
-.services-grid.secondary {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--tertiary-color) 100%);
-  color: var(--white);
+.services-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.services-grid .card {
+  background-color: var(--white);
+  color: var(--text-color);
 }
 
 .service-card {
-  padding: 3rem 2rem;
   height: 100%;
-  border-left: 5px solid var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  color: var(--text-color);
 }
 
 .service-card h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 1.8rem;
+  color: var(--primary-color);
 }
 
 .service-card h3 {
-  color: var(--secondary-color);
-  font-style: italic;
   margin-bottom: 1.5rem;
-  font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-style: italic;
+  opacity: 0.9;
+  color: var(--secondary-color);
 }
 
 .service-card p {
   color: var(--text-color);
   line-height: 1.7;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .service-card ul {
@@ -50,96 +73,125 @@
   padding-left: 1.5rem;
 }
 
-.service-card ul li {
+.service-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
   color: var(--text-color);
-  margin-bottom: 0.6rem;
-  line-height: 1.5;
-  font-size: 0.95rem;
 }
 
-.service-card ul li::marker {
-  color: var(--accent-color);
+/* Age groups section */
+.age-groups {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--tertiary-color) 100%);
+  color: var(--white);
 }
 
-/* Special styling for cards in the secondary section */
-.services-grid.secondary .service-card {
+.age-groups h2,
+.age-groups h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.age-groups h3 {
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.age-groups > .container > p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+.age-group-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.age-group-card {
+  text-align: left;
   background-color: var(--white);
   color: var(--text-color);
 }
 
-.age-groups {
-  padding: 4rem 0;
-  background-color: var(--background-color);
-}
-
-.age-groups h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  color: var(--primary-color);
-}
-
-.age-groups h3 {
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 3rem;
-  font-weight: 500;
-  color: var(--secondary-color);
-}
-
-.age-group-card {
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-left: 4px solid var(--secondary-color);
-}
-
 .age-group-card h4 {
+  margin-bottom: 1rem;
   color: var(--primary-color);
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .age-group-card p {
-  margin-bottom: 0;
-  line-height: 1.5;
-  font-size: 0.95rem;
   color: var(--text-color);
 }
 
-/* CTA section styles are now handled by global .cta-section class */
+/* DC Metro section */
+.dc-metro {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--tertiary-color) 100%);
+  color: var(--white);
+  text-align: center;
+}
 
-/* Mobile Styles */
+.dc-metro h2 {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.dc-metro .card {
+  background-color: var(--white);
+  color: var(--text-color);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dc-metro .card p {
+  color: var(--text-color);
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
-  .services-grid {
-    padding: 2rem 1rem;
+  .intro-content .card {
+    max-width: 100%;
   }
-  
-  .service-card {
-    padding: 2rem 1rem;
-    margin-bottom: 1.5rem;
+
+  .services-grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   
   .service-card h2 {
     font-size: 1.6rem;
   }
   
-  .service-card ul {
-    padding-left: 1rem;
+  .service-card h3 {
+    font-size: 1.2rem;
   }
   
-  .age-groups {
+  .age-group-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .services-grid,
+  .age-groups,
+  .dc-metro {
     padding: 3rem 1rem;
   }
-  
-  .age-groups h2 {
-    font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+  .services-grid-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
-  
-  .age-group-card {
-    padding: 1.2rem;
-  }
-  
-  .location-highlight {
-    padding: 1.5rem;
+
+  .age-group-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }

@@ -1,0 +1,168 @@
+.our-process {
+  min-height: 100vh;
+}
+
+/* Process hero styles are now handled by global .hero-section class */
+
+.getting-started {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+.getting-started h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.process-steps {
+  display: grid;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+  border-left: 5px solid var(--accent-color);
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(48, 54, 85, 0.2);
+}
+
+.step-number {
+  background-color: var(--accent-color);
+  color: var(--white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(111, 144, 175, 0.3);
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.step-content p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.continuing-success {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--tertiary-color) 100%);
+  color: var(--white);
+}
+
+.continuing-success h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.continuing-success .card {
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+.continuing-success .card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.continuing-success .card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  color: var(--text-color);
+}
+
+.process-benefits {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+.process-benefits h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.benefit-card {
+  text-align: center;
+  border-left: 5px solid var(--secondary-color);
+}
+
+.benefit-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.benefit-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* CTA styles are now handled by global .cta-section class */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .getting-started,
+  .continuing-success,
+  .process-benefits {
+    padding: 3rem 1rem;
+  }
+  
+  .getting-started h2,
+  .continuing-success h2,
+  .process-benefits h2 {
+    font-size: 2rem;
+  }
+  
+  .process-step {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .step-number {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .step-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .benefit-card {
+    padding: 1.5rem;
+  }
+}

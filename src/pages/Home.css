@@ -1,0 +1,107 @@
+.home {
+  min-height: 100vh;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+.what-we-do {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+.how-we-help {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--tertiary-color) 100%);
+  color: var(--white);
+}
+
+.how-we-help h2 {
+  color: var(--white);
+}
+
+.how-we-help .card {
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+.features {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+.what-we-do h2,
+.how-we-help h2,
+.features h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.content-left,
+.content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content-left p,
+.content-right p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.learn-more-link {
+  display: inline-block;
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
+.feature-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+.feature-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .what-we-do,
+  .how-we-help,
+  .features {
+    padding: 3rem 1rem;
+  }
+  
+  .what-we-do h2,
+  .how-we-help h2,
+  .features h2 {
+    font-size: 2rem;
+  }
+}

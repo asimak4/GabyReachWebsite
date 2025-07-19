@@ -1,0 +1,167 @@
+.about {
+  min-height: 100vh;
+}
+
+/* Hero section styles handled by global .hero-section class */
+
+.about-content {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+.content-left {
+  /* Additional styling for left content if needed */
+}
+
+.highlight-box {
+  border-left: 5px solid var(--accent-color);
+}
+
+.highlight-box h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.highlight-box p {
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: var(--text-color);
+}
+
+.founder {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--tertiary-color) 100%);
+  color: var(--white);
+}
+
+.founder h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.founder-sidebar {
+  position: sticky;
+  top: 120px;
+}
+
+.founder-card {
+  background-color: var(--accent-color);
+  color: var(--white);
+  text-align: center;
+}
+
+.founder-card h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.founder-card h4 {
+  color: var(--white);
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.credentials-summary h4 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.credentials-summary ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.credentials-summary ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.credentials-summary ul li::before {
+  content: "•";
+  color: var(--white);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.founder-content {
+  padding-left: 2rem;
+}
+
+.founder-content .card {
+  background-color: var(--white);
+  color: var(--text-color);
+}
+
+.founder-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.philosophy {
+  padding: 4rem 0;
+  background-color: var(--background-color);
+}
+
+.philosophy h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.philosophy-card {
+  text-align: center;
+  border-left: 5px solid var(--secondary-color);
+}
+
+.philosophy-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.philosophy-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .about-content,
+  .founder,
+  .philosophy {
+    padding: 3rem 1rem;
+  }
+  
+  .founder h2,
+  .philosophy h2 {
+    font-size: 2rem;
+  }
+  
+  .founder-content {
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  
+  .founder-sidebar {
+    position: static;
+  }
+  
+  .philosophy-card {
+    padding: 1.5rem;
+  }
+}

@@ -68,7 +68,7 @@ const About = () => {
                 </p>
 
                 <p>
-                  When I'm not working with clients, I enjoys exploring D.C.'s many neighborhoods, and trying to find the best — in D.C! My current favorite is —- but I am always looking for suggestions and new opinions! I love to travel, spend time with my family and g — and I bring all of my experiences to my sessions to allow for
+                  When I'm not working with clients, I enjoys exploring D.C.'s many neighborhoods, and trying to find the best — in D.C! My current favorite is —- but I am always looking for suggestions and new opinions! I love to travel, spend time with my family and g — and I bring all of my experiences to my sessions to allow for.
                 </p>
               </div>
             </div>

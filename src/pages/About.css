@@ -571,13 +571,13 @@
   animation: bounceInRight 1.2s ease-out;
 }
 
-.roll-in-right {
+/* .roll-in-right {
   animation: rollInFromRight 1.5s ease-in-out;
 }
 
 .roll-in-right img {
   animation: wheelSpin 1.5s linear;
-}
+} */
 
 .delay-1 {
   animation-delay: calc(0.2s * var(--scale-factor));

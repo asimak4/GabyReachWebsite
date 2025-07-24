@@ -2,7 +2,7 @@
 :root {
   --about-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   --about-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
-  --about-border-radius: 20px;
+  --about-border-radius: calc(20px * var(--scale-factor));
   --about-transition: all 0.3s ease;
   --about-text-light: #666;
 }
@@ -16,8 +16,8 @@
 
 /* Hero About Section */
 .hero-about {
-  padding: 4rem 0 4rem 0;
-  padding-top: calc(4rem + 80px);
+  padding: calc(4rem * var(--scale-factor)) 0 calc(4rem * var(--scale-factor)) 0;
+  padding-top: calc((4rem + 80px) * var(--scale-factor));
   background: linear-gradient(135deg, var(--white) 0%, var(--accent-color) 100%);
   position: relative;
   overflow: hidden;
@@ -41,7 +41,7 @@
   z-index: 2;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: calc(4rem * var(--scale-factor));
   min-height: 40vh;
 }
 
@@ -50,10 +50,10 @@
 }
 
 .hero-about-text h1 {
-  font-size: 3.5rem;
+  font-size: calc(3.5rem * var(--scale-factor));
   font-weight: 700;
   color: var(--primary-color);
-  margin-bottom: 2rem;
+  margin-bottom: calc(2rem * var(--scale-factor));
   line-height: 1.2;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -61,7 +61,7 @@
 }
 
 .hero-about-subtitle {
-  font-size: 1.3rem;
+  font-size: calc(1.3rem * var(--scale-factor));
   font-weight: 400;
   color: var(--about-text-light);
   line-height: 1.7;
@@ -70,7 +70,7 @@
 
 .hero-about-accent {
   flex: 1;
-  min-height: 300px;
+  min-height: calc(300px * var(--scale-factor));
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   border-radius: var(--about-border-radius);
   position: relative;
@@ -80,12 +80,12 @@
 .hero-about-accent::before {
   content: '';
   position: absolute;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: calc(var(--about-border-radius) - 10px);
+  top: calc(20px * var(--scale-factor));
+  left: calc(20px * var(--scale-factor));
+  right: calc(20px * var(--scale-factor));
+  bottom: calc(20px * var(--scale-factor));
+  border: calc(2px * var(--scale-factor)) solid rgba(255, 255, 255, 0.2);
+  border-radius: calc(var(--about-border-radius) - calc(10px * var(--scale-factor)));
 }
 
 .hero-about-accent::after {
@@ -94,8 +94,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
+  width: calc(80px * var(--scale-factor));
+  height: calc(80px * var(--scale-factor));
   background: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
   backdrop-filter: blur(10px);
@@ -103,20 +103,20 @@
 
 .btn-primary, .btn-secondary, .btn-cta {
   display: inline-block;
-  padding: 0.8rem 2rem;
+  padding: calc(0.8rem * var(--scale-factor)) calc(2rem * var(--scale-factor));
   border-radius: var(--about-border-radius);
   font-weight: 400;
   text-decoration: none;
   transition: var(--about-transition);
   cursor: pointer;
   border: none;
-  font-size: 0.9rem;
+  font-size: calc(0.9rem * var(--scale-factor));
 }
 
 .btn-primary {
   background: var(--primary-color);
   color: var(--white);
-  border: 1px solid var(--primary-color);
+  border: calc(1px * var(--scale-factor)) solid var(--primary-color);
 }
 
 .btn-primary:hover {
@@ -127,9 +127,9 @@
 .btn-secondary {
   background: transparent;
   color: var(--white);
-  border: 1px solid var(--white);
-  padding: 0.6rem 1.5rem;
-  font-size: 0.85rem;
+  border: calc(1px * var(--scale-factor)) solid var(--white);
+  padding: calc(0.6rem * var(--scale-factor)) calc(1.5rem * var(--scale-factor));
+  font-size: calc(0.85rem * var(--scale-factor));
 }
 
 .btn-secondary:hover {
@@ -140,8 +140,8 @@
 .btn-cta {
   background: var(--primary-color);
   color: var(--white);
-  padding: 0.8rem 2rem;
-  font-size: 0.9rem;
+  padding: calc(0.8rem * var(--scale-factor)) calc(2rem * var(--scale-factor));
+  font-size: calc(0.9rem * var(--scale-factor));
   border-radius: var(--about-border-radius);
 }
 
@@ -151,14 +151,14 @@
 
 /* Features Section */
 .features {
-  padding: 6rem 0;
+  padding: calc(6rem * var(--scale-factor)) 0;
   background: var(--white);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: calc(1200px * var(--scale-factor));
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 calc(2rem * var(--scale-factor));
   width: 100%;
   box-sizing: border-box;
 }
@@ -166,8 +166,8 @@
 .feature-card {
   display: flex;
   align-items: center;
-  margin-bottom: 6rem;
-  gap: 4rem;
+  margin-bottom: calc(6rem * var(--scale-factor));
+  gap: calc(4rem * var(--scale-factor));
 }
 
 .feature-card:last-child {
@@ -183,24 +183,24 @@
 }
 
 .feature-content h3 {
-  font-size: 1.8rem;
+  font-size: calc(1.8rem * var(--scale-factor));
   font-weight: 600;
   color: var(--text-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(1.5rem * var(--scale-factor));
 }
 
 .feature-content h4 {
-  font-size: 1.2rem;
+  font-size: calc(1.2rem * var(--scale-factor));
   font-weight: 400;
   color: var(--secondary-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(1.5rem * var(--scale-factor));
 }
 
 .feature-content p {
   color: var(--about-text-light);
   line-height: 1.7;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
+  margin-bottom: calc(1.5rem * var(--scale-factor));
+  font-size: calc(1rem * var(--scale-factor));
 }
 
 .feature-content p:last-child {
@@ -234,26 +234,26 @@
 /* Section Divider */
 .section-divider {
   width: 100%;
-  height: 2px;
+  height: calc(2px * var(--scale-factor));
   background: linear-gradient(to right, transparent, var(--secondary-color), transparent);
-  margin: 3rem 0;
+  margin: calc(3rem * var(--scale-factor)) 0;
   position: relative;
 }
 
 /* CTA Section */
 .cta {
-  padding: 4rem 0;
+  padding: calc(4rem * var(--scale-factor)) 0;
   background: #84A7BA;
   color: var(--white);
   text-align: center;
 }
 
 .cta-content {
-  max-width: 900px;
+  max-width: calc(900px * var(--scale-factor));
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: calc(3rem * var(--scale-factor));
 }
 
 .cta-text {
@@ -262,14 +262,14 @@
 }
 
 .cta h2 {
-  font-size: 2.5rem;
+  font-size: calc(2.5rem * var(--scale-factor));
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(1.5rem * var(--scale-factor));
   line-height: 1.2;
 }
 
 .cta p {
-  font-size: 1.2rem;
+  font-size: calc(1.2rem * var(--scale-factor));
   margin-bottom: 0;
   line-height: 1.6;
   opacity: 0.9;
@@ -288,7 +288,7 @@
   border-radius: var(--about-border-radius);
   /* box-shadow: var(--about-shadow); */
   /* background: var(--white); */
-  padding: 1rem;
+  padding: calc(1rem * var(--scale-factor));
   transition: var(--about-transition);
 }
 
@@ -300,13 +300,13 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .hero-about {
-    padding: 3rem 0 3rem 0;
-    padding-top: calc(3rem + 80px);
+    padding: calc(3rem * var(--scale-factor)) 0 calc(3rem * var(--scale-factor)) 0;
+    padding-top: calc((3rem + 80px) * var(--scale-factor));
   }
   
   .hero-about-content {
     flex-direction: column;
-    gap: 2rem;
+    gap: calc(2rem * var(--scale-factor));
     text-align: center;
     min-height: auto;
   }
@@ -317,30 +317,30 @@
   }
   
   .hero-about-text h1 {
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
+    font-size: calc(2.2rem * var(--scale-factor));
+    margin-bottom: calc(1.5rem * var(--scale-factor));
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
   
   .hero-about-subtitle {
-    font-size: 1.1rem;
+    font-size: calc(1.1rem * var(--scale-factor));
   }
   
   .hero-about-accent {
-    min-height: 200px;
-    max-width: 300px;
+    min-height: calc(200px * var(--scale-factor));
+    max-width: calc(300px * var(--scale-factor));
     margin: 0 auto;
   }
   
   .features {
-    padding: 3rem 0;
+    padding: calc(3rem * var(--scale-factor)) 0;
   }
   
   .feature-card {
     flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 3rem;
+    gap: calc(2rem * var(--scale-factor));
+    margin-bottom: calc(3rem * var(--scale-factor));
     text-align: center;
   }
   
@@ -349,7 +349,7 @@
   }
   
   .feature-content h3 {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--scale-factor));
   }
   
   .feature-image img {
@@ -357,12 +357,12 @@
   }
   
   .cta {
-    padding: 3rem 0;
+    padding: calc(3rem * var(--scale-factor)) 0;
   }
   
   .cta-content {
     flex-direction: column;
-    gap: 2rem;
+    gap: calc(2rem * var(--scale-factor));
     text-align: center;
   }
   
@@ -371,11 +371,11 @@
   }
   
   .cta h2 {
-    font-size: 2rem;
+    font-size: calc(2rem * var(--scale-factor));
   }
   
   .cta p {
-    font-size: 1.1rem;
+    font-size: calc(1.1rem * var(--scale-factor));
   }
   
   .cta-certificate img {
@@ -385,12 +385,12 @@
 
 @media (max-width: 480px) {
   .hero-about {
-    padding: 2rem 0 2rem 0;
-    padding-top: calc(2rem + 80px);
+    padding: calc(2rem * var(--scale-factor)) 0 calc(2rem * var(--scale-factor)) 0;
+    padding-top: calc((2rem + 80px) * var(--scale-factor));
   }
   
   .hero-about-content {
-    gap: 1.5rem;
+    gap: calc(1.5rem * var(--scale-factor));
   }
   
   .hero-about-content img {
@@ -398,49 +398,49 @@
   }
   
   .hero-about-text h1 {
-    font-size: 1.6rem;
+    font-size: calc(1.6rem * var(--scale-factor));
     line-height: 1.3;
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
   
   .hero-about-subtitle {
-    font-size: 0.95rem;
+    font-size: calc(0.95rem * var(--scale-factor));
     line-height: 1.6;
   }
   
   .hero-about-accent {
-    min-height: 150px;
-    max-width: 250px;
+    min-height: calc(150px * var(--scale-factor));
+    max-width: calc(250px * var(--scale-factor));
   }
   
   .container {
-    padding: 0 1rem;
+    padding: 0 calc(1rem * var(--scale-factor));
   }
   
   .features {
-    padding: 2rem 0;
+    padding: calc(2rem * var(--scale-factor)) 0;
   }
   
   .feature-card {
-    gap: 1.5rem;
-    margin-bottom: 2.5rem;
+    gap: calc(1.5rem * var(--scale-factor));
+    margin-bottom: calc(2.5rem * var(--scale-factor));
   }
   
   .feature-content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-size: calc(1.3rem * var(--scale-factor));
+    margin-bottom: calc(1rem * var(--scale-factor));
   }
   
   .feature-content h4 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: calc(1rem * var(--scale-factor));
+    margin-bottom: calc(1rem * var(--scale-factor));
   }
   
   .feature-content p {
-    font-size: 0.9rem;
+    font-size: calc(0.9rem * var(--scale-factor));
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: calc(1rem * var(--scale-factor));
   }
   
   .feature-image img {
@@ -448,16 +448,16 @@
   }
   
   .cta {
-    padding: 2.5rem 0;
+    padding: calc(2.5rem * var(--scale-factor)) 0;
   }
   
   .cta h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    font-size: calc(1.6rem * var(--scale-factor));
+    margin-bottom: calc(1rem * var(--scale-factor));
   }
   
   .cta p {
-    font-size: 1rem;
+    font-size: calc(1rem * var(--scale-factor));
   }
   
   .cta-certificate img {
@@ -469,14 +469,14 @@
 @keyframes bounceInDown {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(calc(-100px * var(--scale-factor)));
   }
   60% {
     opacity: 1;
-    transform: translateY(30px);
+    transform: translateY(calc(30px * var(--scale-factor)));
   }
   80% {
-    transform: translateY(-10px);
+    transform: translateY(calc(-10px * var(--scale-factor)));
   }
   100% {
     transform: translateY(0);
@@ -486,14 +486,14 @@
 @keyframes bounceInUp {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(calc(100px * var(--scale-factor)));
   }
   60% {
     opacity: 1;
-    transform: translateY(-30px);
+    transform: translateY(calc(-30px * var(--scale-factor)));
   }
   80% {
-    transform: translateY(10px);
+    transform: translateY(calc(10px * var(--scale-factor)));
   }
   100% {
     transform: translateY(0);
@@ -503,14 +503,14 @@
 @keyframes bounceInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(calc(-50px * var(--scale-factor)));
   }
   60% {
     opacity: 1;
-    transform: translateX(15px);
+    transform: translateX(calc(15px * var(--scale-factor)));
   }
   80% {
-    transform: translateX(-5px);
+    transform: translateX(calc(-5px * var(--scale-factor)));
   }
   100% {
     transform: translateX(0);
@@ -520,14 +520,14 @@
 @keyframes bounceInRight {
   0% {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(calc(50px * var(--scale-factor)));
   }
   60% {
     opacity: 1;
-    transform: translateX(-15px);
+    transform: translateX(calc(-15px * var(--scale-factor)));
   }
   80% {
-    transform: translateX(5px);
+    transform: translateX(calc(5px * var(--scale-factor)));
   }
   100% {
     transform: translateX(0);
@@ -580,27 +580,27 @@
 }
 
 .delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: calc(0.2s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
 .delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: calc(0.4s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
 .delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: calc(0.6s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
 .delay-4 {
-  animation-delay: 0.8s;
+  animation-delay: calc(0.8s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
 .delay-4 img {
-  animation-delay: 0.8s;
+  animation-delay: calc(0.8s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
@@ -619,5 +619,5 @@
 .btn-cta:focus,
 .feature-link:focus {
   outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
+  outline-offset: calc(2px * var(--scale-factor));
 }

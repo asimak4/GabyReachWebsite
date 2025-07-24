@@ -8,7 +8,7 @@
   --white: #ffffff;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
-  --border-radius: 20px;
+  --border-radius: calc(20px * var(--scale-factor));
   --transition: all 0.3s ease;
 }
 
@@ -27,7 +27,7 @@
   justify-content: left;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 80px;
+  padding-top: calc(80px * var(--scale-factor));
 }
 
 .hero::before {
@@ -44,51 +44,51 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: calc(800px * var(--scale-factor));
   margin: 0 auto;
-  margin-left: 200px;
-  padding: 0 2rem;
+  margin-left: calc(200px * var(--scale-factor));
+  padding: 0 calc(2rem * var(--scale-factor));
   text-align: left;
 }
 
 .hero-logo {
   position: relative;
-  margin-left: -150px;
+  margin-left: calc(-150px * var(--scale-factor));
   display: flex;
   justify-content: flex-start;
 }
 
 .hero-logo img {
-  max-width: 200px;
+  max-width: calc(200px * var(--scale-factor));
   height: auto;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 calc(4px * var(--scale-factor)) calc(8px * var(--scale-factor)) rgba(0, 0, 0, 0.3));
 }
 
 .hero-text {
   /* background: rgba(255, 255, 255, 0.95); */
-  padding: 2rem;
+  padding: calc(2rem * var(--scale-factor));
   /* border-radius: var(--border-radius); */
   /* box-shadow: var(--shadow); */
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
+  font-size: calc(3.5rem * var(--scale-factor));
   font-weight: 700;
   color: var(--primary-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(1.5rem * var(--scale-factor));
   line-height: 1.2;
 }
 
 .hero-main-text {
-  font-size: 1.8rem;
+  font-size: calc(1.8rem * var(--scale-factor));
   font-weight: 600;
   color: var(--text-color);
-  margin-bottom: 2rem;
+  margin-bottom: calc(2rem * var(--scale-factor));
   line-height: 1.4;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: calc(1.2rem * var(--scale-factor));
   font-weight: 400;
   color: var(--text-light);
   line-height: 1.6;
@@ -98,7 +98,7 @@
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: calc(1rem * var(--scale-factor));
   flex-wrap: wrap;
 }
 
@@ -117,7 +117,7 @@
 .btn-primary {
   background: var(--primary-color);
   color: var(--white);
-  border: 1px solid var(--primary-color);
+  border: calc(1px * var(--scale-factor)) solid var(--primary-color);
 }
 
 .btn-primary:hover {
@@ -152,7 +152,7 @@
 
 /* Features Section */
 .features {
-  padding: 6rem 0;
+  padding: calc(6rem * var(--scale-factor)) 0;
   background: var(--white);
 }
 
@@ -165,8 +165,8 @@
 .feature-card {
   display: flex;
   align-items: center;
-  margin-bottom: 6rem;
-  gap: 4rem;
+  margin-bottom: calc(6rem * var(--scale-factor));
+  gap: calc(4rem * var(--scale-factor));
 }
 
 .feature-card:last-child {
@@ -183,17 +183,17 @@
 }
 
 .feature-content h3 {
-  font-size: 1.8rem;
+  font-size: calc(1.8rem * var(--scale-factor));
   font-weight: 600;
   color: var(--text-color);
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(1.5rem * var(--scale-factor));
 }
 
 .feature-content p {
   color: var(--text-light);
   line-height: 1.7;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: calc(1rem * var(--scale-factor));
 }
 
 .feature-image {
@@ -223,22 +223,22 @@
 /* Section Divider */
 .section-divider {
   width: 100%;
-  height: 2px;
+  height: calc(2px * var(--scale-factor));
   background: linear-gradient(to right, transparent, var(--secondary-color), transparent);
-  margin: 3rem 0;
+  margin: calc(3rem * var(--scale-factor)) 0;
   position: relative;
 }
 
 /* CTA Section */
 .cta {
-  padding: 6rem 0;
+  padding: calc(6rem * var(--scale-factor)) 0;
   background: #84A7BA;
   color: var(--white);
   text-align: center;
 }
 
 .cta-content {
-  max-width: 600px;
+  max-width: calc(600px * var(--scale-factor));
   margin: 0 auto;
 }
 
@@ -247,21 +247,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 600px;
+  max-width: calc(600px * var(--scale-factor));
   margin: 0 auto;
 }
 
 
 .cta h2 {
-  font-size: 2.5rem;
+  font-size: calc(2.5rem * var(--scale-factor));
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: calc(1.5rem * var(--scale-factor));
   line-height: 1.2;
 }
 
 .cta p {
-  font-size: 1.2rem;
-  margin-bottom: 2.5rem;
+  font-size: calc(1.2rem * var(--scale-factor));
+  margin-bottom: calc(2.5rem * var(--scale-factor));
   line-height: 1.6;
   opacity: 0.9;
 }
@@ -270,7 +270,7 @@
 @media (max-width: 768px) {
   .hero {
     min-height: 80vh;
-    padding: 2rem 0;
+    padding: calc(2rem * var(--scale-factor)) 0;
   }
   
   .hero-content {
@@ -284,33 +284,33 @@
   }
   
   .hero-logo img {
-    max-width: 150px;
+    max-width: calc(150px * var(--scale-factor));
   }
   
   .hero-text {
-    padding: 2rem;
+    padding: calc(2rem * var(--scale-factor));
   }
   
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: calc(2rem * var(--scale-factor));
   }
   
   .hero-main-text {
-    font-size: 1.4rem;
+    font-size: calc(1.4rem * var(--scale-factor));
   }
   
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: calc(1rem * var(--scale-factor));
   }
   
   .features {
-    padding: 4rem 0;
+    padding: calc(4rem * var(--scale-factor)) 0;
   }
   
   .feature-card {
     flex-direction: column;
-    gap: 2rem;
-    margin-bottom: 4rem;
+    gap: calc(2rem * var(--scale-factor));
+    margin-bottom: calc(4rem * var(--scale-factor));
     text-align: center;
   }
   
@@ -319,57 +319,57 @@
   }
   
   .feature-content h3 {
-    font-size: 1.5rem;
+    font-size: calc(1.5rem * var(--scale-factor));
   }
   
   .cta {
-    padding: 4rem 0;
+    padding: calc(4rem * var(--scale-factor)) 0;
   }
   
   .cta h2 {
-    font-size: 2rem;
+    font-size: calc(2rem * var(--scale-factor));
   }
   
   .cta p {
-    font-size: 1.1rem;
+    font-size: calc(1.1rem * var(--scale-factor));
   }
 }
 
 @media (max-width: 480px) {
   .hero-logo img {
-    max-width: 120px;
+    max-width: calc(120px * var(--scale-factor));
   }
   
   .hero-text {
-    padding: 1.5rem;
+    padding: calc(1.5rem * var(--scale-factor));
   }
   
   .hero-text h1 {
-    font-size: 1.8rem;
+    font-size: calc(1.8rem * var(--scale-factor));
   }
   
   .hero-main-text {
-    font-size: 1.2rem;
+    font-size: calc(1.2rem * var(--scale-factor));
   }
   
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: calc(0.9rem * var(--scale-factor));
   }
   
   .container {
-    padding: 0 1rem;
+    padding: 0 calc(1rem * var(--scale-factor));
   }
   
   .feature-card {
-    gap: 1.5rem;
+    gap: calc(1.5rem * var(--scale-factor));
   }
   
   .feature-content h3 {
-    font-size: 1.3rem;
+    font-size: calc(1.3rem * var(--scale-factor));
   }
   
   .cta h2 {
-    font-size: 1.8rem;
+    font-size: calc(1.8rem * var(--scale-factor));
   }
 }
 
@@ -377,14 +377,14 @@
 @keyframes bounceInDown {
   0% {
     opacity: 0;
-    transform: translateY(-2000px);
+    transform: translateY(calc(-2000px * var(--scale-factor)));
   }
   60% {
     opacity: 1;
-    transform: translateY(30px);
+    transform: translateY(calc(30px * var(--scale-factor)));
   }
   80% {
-    transform: translateY(-10px);
+    transform: translateY(calc(-10px * var(--scale-factor)));
   }
   100% {
     transform: translateY(0);
@@ -394,14 +394,14 @@
 @keyframes bounceInUp {
   0% {
     opacity: 0;
-    transform: translateY(2000px);
+    transform: translateY(calc(2000px * var(--scale-factor)));
   }
   60% {
     opacity: 1;
-    transform: translateY(-30px);
+    transform: translateY(calc(-30px * var(--scale-factor)));
   }
   80% {
-    transform: translateY(10px);
+    transform: translateY(calc(10px * var(--scale-factor)));
   }
   100% {
     transform: translateY(0);
@@ -411,14 +411,14 @@
 @keyframes bounceInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-2000px);
+    transform: translateX(calc(-2000px * var(--scale-factor)));
   }
   60% {
     opacity: 1;
-    transform: translateX(30px);
+    transform: translateX(calc(30px * var(--scale-factor)));
   }
   80% {
-    transform: translateX(-10px);
+    transform: translateX(calc(-10px * var(--scale-factor)));
   }
   100% {
     transform: translateX(0);
@@ -428,14 +428,14 @@
 @keyframes bounceInRight {
   0% {
     opacity: 0;
-    transform: translateX(2000px);
+    transform: translateX(calc(2000px * var(--scale-factor)));
   }
   60% {
     opacity: 1;
-    transform: translateX(-30px);
+    transform: translateX(calc(-30px * var(--scale-factor)));
   }
   80% {
-    transform: translateX(10px);
+    transform: translateX(calc(10px * var(--scale-factor)));
   }
   100% {
     transform: translateX(0);
@@ -488,27 +488,27 @@
 }
 
 .delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: calc(0.2s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
 .delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: calc(0.4s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
 .delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: calc(0.6s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
 .delay-4 {
-  animation-delay: 0.8s;
+  animation-delay: calc(0.8s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
 .delay-4 img {
-  animation-delay: 0.8s;
+  animation-delay: calc(0.8s * var(--scale-factor));
   animation-fill-mode: both;
 }
 
@@ -527,5 +527,5 @@
 .btn-cta:focus,
 .feature-link:focus {
   outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
+  outline-offset: calc(2px * var(--scale-factor));
 }

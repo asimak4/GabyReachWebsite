@@ -18,8 +18,8 @@ const About = () => {
                 grow academically, socially, and emotionally at their own pace.
               </p>
             </div>
-            <div className="bounce-in-right delay-3">
-              <img src="/fullWithoutBackground.png" alt="Reach Language and Learning Logo" />
+            <div  className="bounce-in-right delay-3">
+              <img style={{ height: '30vw'}} src="/fullWithoutBackground.png" alt="Reach Language and Learning Logo" />
             </div>
           </div>
         </div>

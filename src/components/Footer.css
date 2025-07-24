@@ -1,37 +1,37 @@
 .footer {
   background-color: #ffffff;
   color: #000000;
-  padding: 3rem 0 1rem;
+  padding: calc(3rem * var(--scale-factor)) 0 calc(1rem * var(--scale-factor));
   margin-top: auto;
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: calc(1200px * var(--scale-factor));
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 calc(1rem * var(--scale-factor));
 }
 
 .footer-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(calc(250px * var(--scale-factor)), 1fr));
+  gap: calc(2rem * var(--scale-factor));
+  margin-bottom: calc(2rem * var(--scale-factor));
 }
 
 .footer-section h3 {
   color: var(--accent-very-light-blue);
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: calc(1rem * var(--scale-factor));
+  font-size: calc(1.5rem * var(--scale-factor));
 }
 
 .footer-section h4 {
   color: var(--secondary-light-blue);
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  margin-bottom: calc(1rem * var(--scale-factor));
+  font-size: calc(1.2rem * var(--scale-factor));
 }
 
 .footer-section p {
-  margin-bottom: 0.5rem;
+  margin-bottom: calc(0.5rem * var(--scale-factor));
   line-height: 1.6;
   color: var(--white);
 }
@@ -42,7 +42,7 @@
 }
 
 .footer-section ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: calc(0.5rem * var(--scale-factor));
 }
 
 .footer-section ul li a {
@@ -56,14 +56,14 @@
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--secondary-light-blue);
-  padding-top: 1rem;
+  border-top: calc(1px * var(--scale-factor)) solid var(--secondary-light-blue);
+  padding-top: calc(1rem * var(--scale-factor));
   text-align: center;
 }
 
 .footer-bottom p {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  margin-bottom: calc(0.5rem * var(--scale-factor));
+  font-size: calc(0.9rem * var(--scale-factor));
   color: var(--secondary-light-blue);
 }
 
@@ -71,7 +71,7 @@
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: calc(1.5rem * var(--scale-factor));
   }
   
   .footer-section {
@@ -79,6 +79,6 @@
   }
   
   .footer {
-    padding: 2rem 0 1rem;
+    padding: calc(2rem * var(--scale-factor)) 0 calc(1rem * var(--scale-factor));
   }
 }

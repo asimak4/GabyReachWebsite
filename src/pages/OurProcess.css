@@ -5,50 +5,50 @@
 /* Process hero styles are now handled by global .hero-section class */
 
 .getting-started {
-  padding: 4rem 0;
+  padding: calc(4rem * var(--scale-factor)) 0;
   background-color: var(--background-color);
 }
 
 .getting-started h2 {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: calc(3rem * var(--scale-factor));
   color: var(--primary-color);
-  font-size: 2.5rem;
+  font-size: calc(2.5rem * var(--scale-factor));
 }
 
 .process-steps {
   display: grid;
-  gap: 2rem;
-  max-width: 800px;
+  gap: calc(2rem * var(--scale-factor));
+  max-width: calc(800px * var(--scale-factor));
   margin: 0 auto;
 }
 
 .process-step {
   display: flex;
   align-items: flex-start;
-  padding: 2rem;
-  border-left: 5px solid var(--accent-color);
+  padding: calc(2rem * var(--scale-factor));
+  border-left: calc(5px * var(--scale-factor)) solid var(--accent-color);
 }
 
 .process-step:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(48, 54, 85, 0.2);
+  transform: translateY(calc(-5px * var(--scale-factor)));
+  box-shadow: 0 calc(15px * var(--scale-factor)) calc(35px * var(--scale-factor)) rgba(48, 54, 85, 0.2);
 }
 
 .step-number {
   background-color: var(--accent-color);
   color: var(--white);
-  width: 60px;
-  height: 60px;
+  width: calc(60px * var(--scale-factor));
+  height: calc(60px * var(--scale-factor));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: calc(1.8rem * var(--scale-factor));
   font-weight: bold;
-  margin-right: 2rem;
+  margin-right: calc(2rem * var(--scale-factor));
   flex-shrink: 0;
-  box-shadow: 0 4px 15px rgba(111, 144, 175, 0.3);
+  box-shadow: 0 calc(4px * var(--scale-factor)) calc(15px * var(--scale-factor)) rgba(111, 144, 175, 0.3);
 }
 
 .step-content {
@@ -57,27 +57,27 @@
 
 .step-content h3 {
   color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+  margin-bottom: calc(1rem * var(--scale-factor));
+  font-size: calc(1.3rem * var(--scale-factor));
 }
 
 .step-content p {
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: calc(1rem * var(--scale-factor));
   line-height: 1.7;
   color: var(--text-color);
 }
 
 .continuing-success {
-  padding: 4rem 0;
+  padding: calc(4rem * var(--scale-factor)) 0;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--tertiary-color) 100%);
   color: var(--white);
 }
 
 .continuing-success h2 {
   text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
+  margin-bottom: calc(3rem * var(--scale-factor));
+  font-size: calc(2.5rem * var(--scale-factor));
   color: var(--white);
 }
 
@@ -88,38 +88,38 @@
 
 .continuing-success .card h3 {
   color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
+  margin-bottom: calc(1rem * var(--scale-factor));
+  font-size: calc(1.4rem * var(--scale-factor));
 }
 
 .continuing-success .card p {
-  font-size: 1.1rem;
+  font-size: calc(1.1rem * var(--scale-factor));
   line-height: 1.8;
   margin-bottom: 0;
   color: var(--text-color);
 }
 
 .process-benefits {
-  padding: 4rem 0;
+  padding: calc(4rem * var(--scale-factor)) 0;
   background-color: var(--background-color);
 }
 
 .process-benefits h2 {
   text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
+  margin-bottom: calc(3rem * var(--scale-factor));
+  font-size: calc(2.5rem * var(--scale-factor));
   color: var(--primary-color);
 }
 
 .benefit-card {
   text-align: center;
-  border-left: 5px solid var(--secondary-color);
+  border-left: calc(5px * var(--scale-factor)) solid var(--secondary-color);
 }
 
 .benefit-card h3 {
   color: var(--primary-color);
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
+  margin-bottom: calc(1rem * var(--scale-factor));
+  font-size: calc(1.4rem * var(--scale-factor));
 }
 
 .benefit-card p {
@@ -135,34 +135,34 @@
   .getting-started,
   .continuing-success,
   .process-benefits {
-    padding: 3rem 1rem;
+    padding: calc(3rem * var(--scale-factor)) calc(1rem * var(--scale-factor));
   }
   
   .getting-started h2,
   .continuing-success h2,
   .process-benefits h2 {
-    font-size: 2rem;
+    font-size: calc(2rem * var(--scale-factor));
   }
   
   .process-step {
     flex-direction: column;
     text-align: center;
-    padding: 1.5rem;
+    padding: calc(1.5rem * var(--scale-factor));
   }
   
   .step-number {
     margin-right: 0;
-    margin-bottom: 1rem;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+    margin-bottom: calc(1rem * var(--scale-factor));
+    width: calc(50px * var(--scale-factor));
+    height: calc(50px * var(--scale-factor));
+    font-size: calc(1.5rem * var(--scale-factor));
   }
   
   .step-content h3 {
-    font-size: 1.2rem;
+    font-size: calc(1.2rem * var(--scale-factor));
   }
   
   .benefit-card {
-    padding: 1.5rem;
+    padding: calc(1.5rem * var(--scale-factor));
   }
 }

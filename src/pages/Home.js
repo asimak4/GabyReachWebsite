@@ -59,7 +59,7 @@ const Home = () => {
 
       <section className="cta">
         <div className="container">
-          <div className="cta-content bounce-in-up delay-1">
+          <div className="cta-content-home bounce-in-up delay-1">
             <h2>Let's make a plan!</h2>
             <p>
               Start with a free 15-minute consultation to see how we can help. If we're a good fit, we'll dive into a comprehensive consultation to create a plan that's thoughtful, goal-oriented, and just right for your child.

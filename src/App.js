@@ -7,6 +7,9 @@ import About from './pages/About';
 import Services from './pages/Services';
 import OurProcess from './pages/OurProcess';
 import Contact from './pages/Contact';
+import ClientPortal from './pages/ClientPortal';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 import './App.css';
 
 // ScrollToTop component to handle scroll restoration
@@ -34,6 +37,9 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/process" element={<OurProcess />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/client-portal" element={<ClientPortal />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </main>
         <Footer />

@@ -9,6 +9,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Reach Language and Learning. All rights reserved.</p>
           <p>Gaby McLish, M.S., CCC-SLP</p>
+          <p><Link to="/terms" className="footer-terms-link">Terms of Service</Link></p>
         </div>
       </div>
     </footer>

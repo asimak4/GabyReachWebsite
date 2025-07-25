@@ -67,6 +67,17 @@
   color: var(--secondary-light-blue);
 }
 
+.footer-terms-link {
+  color: var(--secondary-light-blue) !important;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.footer-terms-link:hover {
+  color: var(--highlight-coral) !important;
+  text-decoration: underline;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .footer-content {

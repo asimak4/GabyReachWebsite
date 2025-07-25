@@ -142,6 +142,15 @@ const Navigation = () => {
               Contact
             </Link>
           </li>
+          <li className="nav-item">
+            <Link 
+              to="/client-portal" 
+              className={`nav-link ${location.pathname === '/client-portal' ? 'active' : ''}`}
+              onClick={closeMenu}
+            >
+              Client Portal
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,0 +1,125 @@
+.client-portal {
+  min-height: 100vh;
+  padding: 100px 0 50px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.portal-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portal-logo img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.portal-header h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #8db68d;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.portal-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portal-section {
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.portal-card h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.portal-card p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portal-btn {
+  background: #8db68d;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.portal-btn:hover {
+  background: #7ba67b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portal-info {
+  text-align: center;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.portal-info p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .client-portal {
+    padding: 80px 20px 30px;
+  }
+
+  .portal-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .portal-section {
+    padding: 30px 20px;
+  }
+
+  .portal-card h2 {
+    font-size: 2rem;
+  }
+
+  .portal-card p {
+    font-size: 1.1rem;
+  }
+
+  .portal-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+} 

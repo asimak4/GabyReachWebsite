@@ -7,7 +7,7 @@ const Home = () => {
       <section 
         className="hero"
         style={{
-          backgroundImage: `url(/stackedBooks.jpg)`
+          backgroundImage: `url(/stackedBooks.jpg)`,
         }}
       >
         <div className="hero-content">

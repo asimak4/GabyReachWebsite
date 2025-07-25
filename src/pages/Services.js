@@ -27,7 +27,7 @@ const Services = () => {
               </div>
             </div>
             <div className="header-image-section">
-              <img src="/childWriting.jpg" alt="Child Writing and Learning" className="header-image bounce-in-left delay-4" />
+              <img src="/laptopOnDesk.jpg" alt="Laptop on Desk" className="header-image bounce-in-left delay-4" />
             </div>
           </div>
         </div>

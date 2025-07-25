@@ -26,16 +26,21 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <section className="hero-section">
-        <div className="container">
-          <h1>Contact Us</h1>
-          <p>Ready to take the first step? We're here to help your child thrive.</p>
-        </div>
-      </section>
+      <div className="container">
+        <div className="contact-layout">
+          {/* Left Side - Logo and Text */}
+          <div className="contact-info">
+            <div className="logo-section">
+              <img src="/fullWithoutBackground.png" alt="Reach Language and Learning Logo" className="contact-logo" />
+              <h1>We are here to help</h1>
+            </div>
+            <p className="contact-description">
+              Ready to take the first step? We'd love to learn more about your learner's unique strengths and needs. Complete the form to request your free consultation, and we'll be in touch within 24 hours to discuss how we can support your goals.
+            </p>
+          </div>
 
-      <section className="contact-form-section">
-        <div className="container">
-          <div className="form-container">
+          {/* Right Side - Contact Form */}
+          <div className="contact-form-container">
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
@@ -122,7 +127,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

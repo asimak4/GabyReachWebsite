@@ -179,7 +179,7 @@
   margin: 0;
   line-height: 1.2;
   color: var(--primary-color);
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background: var(--primary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -713,7 +713,7 @@
   .header-layout {
     flex-direction: column;
     gap: 2rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   .header-content {

@@ -5,6 +5,8 @@ import './Navigation.css';
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const location = useLocation();
 
   const toggleMenu = () => {
@@ -35,6 +37,34 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Handle responsive detection to prevent initial layout shift
+  useEffect(() => {
+    const checkScreenSize = () => {
+      // Use window.outerWidth and add buffer to account for zoom/scaling issues
+      const effectiveWidth = Math.max(window.innerWidth, window.outerWidth || 0);
+      setIsMobile(effectiveWidth <= 768);
+    };
+    
+    // Set initial state immediately
+    checkScreenSize();
+    
+    const handleResize = () => {
+      checkScreenSize();
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Remove no-transition class after component mounts to enable animations
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 1000); // Delay to ensure all page animations complete before navbar transitions are enabled
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   // Cleanup effect to restore body scroll on unmount
   useEffect(() => {
     return () => {
@@ -43,7 +73,7 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navigation ${isScrolled ? 'scrolled' : ''} ${!isLoaded ? 'no-transition' : 'js-loaded'}`}>
       <div className="nav-container">
         <Link to="/" className="logo" onClick={closeMenu}>
           {isScrolled && (

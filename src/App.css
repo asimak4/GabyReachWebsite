@@ -8,13 +8,28 @@
   --text-color: #303655;           /* Martinique - Body text */
   --white: #ffffff;
   --card-background: #ffffff;
-  --scale-factor: 0.8;             /* Global scale factor: 30% smaller */
+  --scale-factor: 0.9;             /* Global scale factor: 30% smaller */
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Prevent layout shifts from animations */
+[class*="bounce-in"],
+[class*="roll-in"] {
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+/* Ensure animations don't cause layout shifts */
+@media (prefers-reduced-motion: no-preference) {
+  [class*="bounce-in"],
+  [class*="roll-in"] {
+    animation-fill-mode: both;
+  }
 }
 
 body {
@@ -117,7 +132,7 @@ section {
 }
 
 .container {
-  max-width: calc(2000px * var(--scale-factor));
+  max-width: calc(1800px * var(--scale-factor));
   margin: 0 auto;
   padding: 0 calc(3rem * var(--scale-factor));
 }

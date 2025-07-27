@@ -8,7 +8,7 @@
   --text-color: #303655;           /* Martinique - Body text */
   --white: #ffffff;
   --card-background: #ffffff;
-  --scale-factor: 0.9;             /* Global scale factor: 30% smaller */
+  --scale-factor: 0.8;             /* Global scale factor: 30% smaller */
 }
 
 * {

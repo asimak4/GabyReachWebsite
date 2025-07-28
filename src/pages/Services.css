@@ -162,7 +162,7 @@
     transform: translateY(0px);
   }
   50% { 
-    transform: translateY(-8px);
+    transform: translateY(-4px);
   }
 }
 
@@ -455,7 +455,7 @@
 
 /* Age Groups Section - Integrated flow */
 .age-groups {
-  padding: 4rem 0;
+  padding: 0rem 0;
   background: transparent;
 }
 
@@ -646,7 +646,7 @@
 
 @keyframes float {
   0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
-  50% { transform: translate(-50%, -50%) rotate(180deg); }
+  50% { transform: translate(-50%, -50%) rotate(90deg); }
 }
 
 .cta-content-services {
@@ -1024,109 +1024,85 @@
   }
 }
 
-/* Bouncing Animations - Optimized to prevent layout shifts */
-@keyframes bounceInDown {
+/* Simplified Animations - Faster and smoother */
+@keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(15px);
-  }
-  80% {
-    transform: translateY(-5px);
+    transform: translateY(20px);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes bounceInUp {
+@keyframes fadeInLeft {
   0% {
     opacity: 0;
-    transform: translateY(50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-15px);
-  }
-  80% {
-    transform: translateY(5px);
+    transform: translateX(-20px);
   }
   100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes bounceInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateX(15px);
-  }
-  80% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes bounceInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateX(-15px);
-  }
-  80% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* Animation Classes */
+/* Animation Classes - Faster and simpler */
 .bounce-in-down {
-  animation: bounceInDown 1.2s ease-out;
+  animation: fadeInDown 0.6s ease-out;
 }
 
 .bounce-in-up {
-  animation: bounceInUp 1.2s ease-out;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .bounce-in-left {
-  animation: bounceInLeft 1.2s ease-out;
+  animation: fadeInLeft 0.6s ease-out;
 }
 
 .bounce-in-right {
-  animation: bounceInRight 1.2s ease-out;
+  animation: fadeInRight 0.6s ease-out;
 }
 
 .delay-1 {
-  animation-delay: 0.2s;
+  animation-delay: 0.1s;
   animation-fill-mode: both;
 }
 
 .delay-2 {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
   animation-fill-mode: both;
 }
 
 .delay-3 {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
   animation-fill-mode: both;
 }
 
 .delay-4 {
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
   animation-fill-mode: both;
 }
 
@@ -1142,6 +1118,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Performance optimizations */
+.header-image,
+.intro-main-image,
+.dc-metro-image {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
 /* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -1153,5 +1137,11 @@ html {
   
   .cta-services::before {
     animation: none;
+  }
+  
+  .header-image,
+  .intro-main-image,
+  .dc-metro-image {
+    animation: none !important;
   }
 }

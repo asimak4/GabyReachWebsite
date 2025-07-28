@@ -19,7 +19,7 @@
   min-height: 100vh;
   background: var(--gradient-bg);
   color: var(--text-color);
-  padding: calc((4rem + 80px) * var(--scale-factor)) 0 calc(4rem * var(--scale-factor)) 0;
+  padding: calc((2rem + 80px) * var(--scale-factor)) 0 calc(4rem * var(--scale-factor)) 0;
   position: relative;
 }
 
@@ -45,13 +45,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: calc(4rem * var(--scale-factor));
-  align-items: center;
-  min-height: 70vh;
+  align-items: start;
+  min-height: 60vh;
+  padding-top: calc(2rem * var(--scale-factor));
 }
 
 /* Left Side - Contact Info */
 .contact-info {
   padding-right: calc(2rem * var(--scale-factor));
+  padding-top: calc(1rem * var(--scale-factor));
 }
 
 .logo-section {
@@ -197,7 +199,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: calc((3rem + 80px) * var(--scale-factor)) calc(1rem * var(--scale-factor)) calc(3rem * var(--scale-factor)) calc(1rem * var(--scale-factor));
+    padding: calc((2rem + 80px) * var(--scale-factor)) calc(1rem * var(--scale-factor)) calc(3rem * var(--scale-factor)) calc(1rem * var(--scale-factor));
   }
   
   .contact-form-container {

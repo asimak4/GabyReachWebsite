@@ -8,14 +8,9 @@ const About = () => {
         <div className="container">
           <div className="hero-about-content">
             <div className="hero-about-text bounce-in-left delay-1">
-              <h1>About Reach Language and Learning</h1>
+              <h1>About <span className="company-name">Reach Language and Learning</span></h1>
               <p className="hero-about-subtitle bounce-in-up delay-2">
-                Reach Language and Learning was founded by Gaby McLish, C.C.C.-SLP, out of a deep passion for helping 
-                kids and teens feel confident, capable, and understood. Based in Washington, D.C., Reach is a private 
-                speech-language therapy practice that offers personalized support to students across the DMV. We know 
-                that every child is different, which is why we take the time to truly understand their strengths, 
-                challenges, and goals. Our one-on-one sessions are thoughtful, engaging, and built to help each student 
-                grow academically, socially, and emotionally at their own pace.
+              Reach Language and Learning was founded by Gaby McLish, C.C.C.-SLP. Based in Washington, D.C., Reach is a private speech-language therapy practice that offers specialized support to students across the DMV. At Reach we know that every child is different, which is why we take the time to truly understand their strengths, challenges, and goals. Our one-on-one sessions are thoughtful, engaging, and built to help each student grow academically, socially, and emotionally at their own pace.
               </p>
             </div>
             <div  className="bounce-in-right delay-3">
@@ -29,7 +24,7 @@ const About = () => {
         <div className="container">
           <div className="feature-card">
             <div className="feature-image bounce-in-left delay-1">
-              <img src="/headshot.webp" alt="Gaby McLish, Speech-Language Pathologist" />
+              <img src="/profilePic.jpg" alt="Gaby McLish, Speech-Language Pathologist" />
             </div>
             <div className="feature-content bounce-in-right delay-2">
               <h3>Meet Gaby McLish, M.S., CCC-SLP</h3>
@@ -58,8 +53,8 @@ const About = () => {
                 During my time in Boston, I completed clinical work in the Cambridge Public Schools, providing speech and 
                 language therapy in diverse, multilingual elementary classrooms. I also trained at Architects for Learning, 
                 a specialized clinic in Needham, Massachusetts, where I supported students with challenges in writing, 
-                organization, and executive functioning. These experiences shaped my expertise in literacy and learning, and 
-                reinforced my commitment to engaging, strengths-based intervention.
+                organization, and executive functioning. These experiences shaped my expertise in literacy and learning and introduced me to the BrainFrames and Empower tools for writing and language organization. 
+
               </p>
               <p>
                 After returning to Washington, D.C., I completed my Clinical Fellowship Year at a private practice focused 
@@ -76,10 +71,7 @@ const About = () => {
             <div className="feature-content bounce-in-right delay-4">
               <h3>Philosophy & Approach</h3>
               <p>
-                My practice's philosophy is rooted in evidence-based strategies, collaborative relationships, and the belief 
-                that all individuals can succeed when given the right tools and support. At Reach Language and Learning, I 
-                combine my neuroscience background, clinical training, and real-world experience to deliver services that 
-                are practical, personalized, and impactful.
+              My practice is rooted in evidence-based strategies, collaboration, and the idea that all students can thrive when given the right tools and attention. At Reach Language and Learning, I combine my neuroscience background, clinical training, and real-world experience to deliver services that are practical, personalized, and impactful.
               </p>
               <p>
                 When I'm not working with clients, I enjoy exploring D.C.'s many neighborhoods and trying to find the best restaurants in D.C! I love to travel, spend time with my family, and I bring all of my experiences to my sessions to create meaningful connections with my clients.

@@ -52,12 +52,22 @@
 .hero-about-text h1 {
   font-size: calc(3.5rem * var(--scale-factor));
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin-bottom: calc(2rem * var(--scale-factor));
   line-height: 1.2;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-about-text .company-name {
+  color: var(--primary-color);
+  background: #091e55;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  text-shadow: 0 calc(2px * var(--scale-factor)) calc(4px * var(--scale-factor)) rgba(44, 90, 160, 0.1);
 }
 
 .hero-about-subtitle {
@@ -200,7 +210,7 @@
   color: var(--about-text-light);
   line-height: 1.7;
   margin-bottom: calc(1.5rem * var(--scale-factor));
-  font-size: calc(1rem * var(--scale-factor));
+  font-size: calc(1.1rem * var(--scale-factor));
 }
 
 .feature-content p:last-child {
@@ -319,8 +329,9 @@
   .hero-about-text h1 {
     font-size: calc(2.2rem * var(--scale-factor));
     margin-bottom: calc(1.5rem * var(--scale-factor));
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .hero-about-subtitle {
@@ -400,8 +411,9 @@
   .hero-about-text h1 {
     font-size: calc(1.6rem * var(--scale-factor));
     line-height: 1.3;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .hero-about-subtitle {

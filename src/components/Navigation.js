@@ -76,13 +76,11 @@ const Navigation = () => {
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''} ${!isLoaded ? 'no-transition' : 'js-loaded'}`}>
       <div className="nav-container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          {isScrolled && (
-            <img 
-              src="/LogoOfficial.png" 
-              alt="Reach Language & Learning Logo" 
-              className="nav-logo-icon"
-            />
-          )}
+          <img 
+            src="/LogoOfficialNOBG.png" 
+            alt="Brain Icon" 
+            className="nav-logo-icon"
+          />
           <h2>Reach Language & Learning</h2>
         </Link>
         

@@ -73,7 +73,7 @@ const Terms = () => {
             <p>
               <strong>Reach Language and Learning</strong><br/>
               202-725-5233<br/>
-              gaby@reachlanguagelearning.com
+              gaby@reachlanguageandlearning.com
             </p>
             
             <h2>Disclaimer</h2>

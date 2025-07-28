@@ -35,7 +35,7 @@ const Home = () => {
             <div className="feature-content bounce-in-right delay-2">
               <h3>What we do:</h3>
               <p>
-                At Reach Language and Learning, we support our clients with the skills they need to communicate clearly, stay organized, and succeed in school. Whether your child is struggling to keep up with reading and writing, express themselves, follow directions or stay on task, we're here to help. Reach builds on your child's strengths to improve language, literacy, and executive functioning in ways that feel practical, engaging, and doable—for both kids and families. <a href="/services" className="feature-link">(learn more about our services)</a>
+                At Reach Language and Learning, we support our clients with the skills they need to communicate clearly, stay organized, and succeed in school. Whether your child is struggling to keep up with reading and writing, express themselves, follow directions or stay on task, we're here to help. Reach builds on your child's strengths to improve language, literacy, and executive functioning in ways that feel practical, engaging, and doable—for both kids and families. <a href="/services" className="feature-link">(Learn more about our services)</a>
               </p>
             </div>
 

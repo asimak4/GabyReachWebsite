@@ -116,6 +116,10 @@
   color: var(--primary-color);
 }
 
+.navigation.scrolled .nav-logo-icon {
+  filter: none;
+}
+
 .logo h2 {
   margin: 0;
   font-size: calc(1.5rem * var(--scale-factor));
@@ -128,8 +132,9 @@
 .nav-logo-icon {
   height: calc(40px * var(--scale-factor));
   width: auto;
-  opacity: 0;
-  animation: fadeInLogo 0.3s ease-in-out forwards;
+  opacity: 1;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
 }
 
 @keyframes fadeInLogo {
@@ -379,6 +384,7 @@
 
   .nav-logo-icon {
     height: calc(28px * var(--scale-factor));
+    filter: brightness(0) invert(1);
   }
 
   .logo {
@@ -398,6 +404,7 @@
 
   .nav-logo-icon {
     height: calc(24px * var(--scale-factor));
+    filter: brightness(0) invert(1);
   }
 
   .logo {

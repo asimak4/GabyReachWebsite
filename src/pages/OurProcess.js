@@ -10,20 +10,20 @@ const OurProcess = () => {
           <div className="header-layout">
             <div className="header-content">
               <div className="title-with-logo">
-                <h1 className="page-title bounce-in-right delay-1">Our Process</h1>
-                <img src="/fullWithoutBackground.png" alt="Reach Language and Learning Logo" className="title-logo bounce-in-left delay-1" />
+                <h1 className="page-title">Our Process</h1>
+                <img src="/fullWithoutBackground.png" alt="Reach Language and Learning Logo" className="title-logo" />
               </div>
-              <p className="page-subtitle bounce-in-down delay-2">
+              <p className="page-subtitle">
                 A thoughtful, personalized approach to support your child's growth
               </p>
-              <div className="intro-text bounce-in-up delay-3">
+              <div className="intro-text">
                 <p>
                   At Reach Language and Learning, we believe that every child deserves individualized support that meets them where they are. Our comprehensive process ensures that we understand your child's unique strengths and needs, creating a foundation for meaningful progress.
                 </p>
               </div>
             </div>
             <div className="header-image-section">
-              <img src="/library.jpg" alt="Stacked Books" className="header-image bounce-in-left delay-4" />
+              <img src="/library.jpg" alt="Stacked Books" className="header-image" />
             </div>
           </div>
         </div>
@@ -33,9 +33,9 @@ const OurProcess = () => {
       <section className="process-steps">
         <div className="container">
           <div className="process-intro-section">
-            <div className="sub-header-card bounce-in-up delay-2">
+            <div className="sub-header-card">
               <div className="sub-header-content">
-                <img src="/clipboard.png" alt="Checklist" className="sub-header-image bounce-in-left delay-1" />
+                <img src="/clipboard.png" alt="Checklist" className="sub-header-image" />
                 <p>
                   Our streamlined process is designed to quickly understand your child's needs and begin meaningful support as efficiently as possible.
                 </p>
@@ -45,7 +45,7 @@ const OurProcess = () => {
           
           <div className="process-steps-grid">
             {/* Step 1 */}
-            <div className="process-step bounce-in-left delay-1">
+            <div className="process-step">
               <div className="step-number-badge">1</div>
               <div className="process-step-content">
                 <div className="process-step-header">
@@ -62,7 +62,7 @@ const OurProcess = () => {
             </div>
 
             {/* Step 2 */}
-            <div className="process-step bounce-in-right delay-2">
+            <div className="process-step">
               <div className="step-number-badge">2</div>
               <div className="process-step-content">
                 <div className="process-step-header">
@@ -81,7 +81,7 @@ const OurProcess = () => {
             </div>
 
             {/* Step 3 */}
-            <div className="process-step bounce-in-left delay-3">
+            <div className="process-step">
               <div className="step-number-badge">3</div>
               <div className="process-step-content">
                 <div className="process-step-header">
@@ -98,7 +98,7 @@ const OurProcess = () => {
             </div>
 
             {/* Step 4 */}
-            <div className="process-step bounce-in-right delay-4">
+            <div className="process-step">
               <div className="step-number-badge">4</div>
               <div className="process-step-content">
                 <div className="process-step-header">
@@ -115,7 +115,7 @@ const OurProcess = () => {
             </div>
 
             {/* Step 5 */}
-            <div className="process-step bounce-in-left delay-1">
+            <div className="process-step">
               <div className="step-number-badge">5</div>
               <div className="process-step-content">
                 <div className="process-step-header">
@@ -137,7 +137,7 @@ const OurProcess = () => {
       {/* CTA Section */}
       <section className="cta-process">
         <div className="container">
-          <div className="cta-content-process bounce-in-up delay-1">
+          <div className="cta-content-process">
             <h2>Continuing Success</h2>
             <p>
               We use the latest clinical approaches based in the Science of Reading and the most up to date research 

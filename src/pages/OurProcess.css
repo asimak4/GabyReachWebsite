@@ -87,21 +87,11 @@
   border-radius: var(--border-radius-lg);
   filter: drop-shadow(0 15px 35px rgba(44, 90, 160, 0.2));
   transition: var(--transition);
-  animation: float-gentle 4s ease-in-out infinite;
 }
 
 .header-image:hover {
   transform: scale(1.02);
   filter: drop-shadow(0 20px 45px rgba(44, 90, 160, 0.3));
-}
-
-@keyframes float-gentle {
-  0%, 100% { 
-    transform: translateY(0px);
-  }
-  50% { 
-    transform: translateY(-8px);
-  }
 }
 
 .title-with-logo {
@@ -214,7 +204,6 @@
   border-radius: var(--border-radius-lg);
   filter: drop-shadow(0 15px 35px rgba(44, 90, 160, 0.2));
   transition: var(--transition);
-  animation: float-gentle 4s ease-in-out infinite;
 }
 
 .intro-main-image:hover {
@@ -243,6 +232,20 @@
   align-items: center;
   gap: 2rem;
   text-align: left;
+}
+
+.sub-header-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(44, 90, 160, 0.2));
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.sub-header-image:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 6px 12px rgba(44, 90, 160, 0.3));
 }
 
 .sub-header-card p {
@@ -435,7 +438,7 @@
   width: 200%;
   height: 200%;
   background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-  animation: float 6s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -750,112 +753,6 @@
   .gradient-divider::before {
     width: 80px;
   }
-}
-
-/* Bouncing Animations - Optimized to prevent layout shifts */
-@keyframes bounceInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(15px);
-  }
-  80% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounceInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-15px);
-  }
-  80% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes bounceInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateX(15px);
-  }
-  80% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes bounceInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateX(-15px);
-  }
-  80% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* Animation Classes */
-.bounce-in-down {
-  animation: bounceInDown 1.2s ease-out;
-}
-
-.bounce-in-up {
-  animation: bounceInUp 1.2s ease-out;
-}
-
-.bounce-in-left {
-  animation: bounceInLeft 1.2s ease-out;
-}
-
-.bounce-in-right {
-  animation: bounceInRight 1.2s ease-out;
-}
-
-.delay-1 {
-  animation-delay: 0.2s;
-  animation-fill-mode: both;
-}
-
-.delay-2 {
-  animation-delay: 0.4s;
-  animation-fill-mode: both;
-}
-
-.delay-3 {
-  animation-delay: 0.6s;
-  animation-fill-mode: both;
-}
-
-.delay-4 {
-  animation-delay: 0.8s;
-  animation-fill-mode: both;
 }
 
 /* Focus states for accessibility */

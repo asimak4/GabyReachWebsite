@@ -1,28 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import './Contact.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    referralSource: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
-  };
+  const [state, handleSubmit] = useForm("xzzvgrlg");
 
   return (
     <div className="contact">
@@ -41,90 +22,101 @@ const Contact = () => {
 
           {/* Right Side - Contact Form */}
           <div className="contact-form-container">
-            <form className="contact-form" onSubmit={handleSubmit}>
-              <div className="form-row">
+            {!state.succeeded ? (
+              <form className="contact-form" onSubmit={handleSubmit}>
+                              <div className="form-row">
+                  <div className="form-group">
+                    <label htmlFor="firstName">First Name</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="lastName">Last Name</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      required
+                    />
+                  </div>
+                </div>
+
                 <div className="form-group">
-                  <label htmlFor="firstName">First Name</label>
+                  <label htmlFor="email">Email <span className="required">(required)</span></label>
                   <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
+                    type="email"
+                    id="email"
+                    name="email"
                     required
                   />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="lastName">Last Name</label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    required
+                  <ValidationError 
+                    prefix="Email" 
+                    field="email"
+                    errors={state.errors}
                   />
                 </div>
-              </div>
 
-              <div className="form-group">
-                <label htmlFor="email">Email <span className="required">(required)</span></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
+                <div className="form-group">
+                  <label htmlFor="phone">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                  />
+                </div>
 
-              <div className="form-group">
-                <label htmlFor="phone">Phone</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
-              </div>
+                <div className="form-group">
+                  <label htmlFor="referralSource">How did you hear about us?</label>
+                  <select
+                    id="referralSource"
+                    name="referralSource"
+                  >
+                    <option value="">Select an option</option>
+                    <option value="google">Google Search</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="friend-family">Friend/Family Referral</option>
+                    <option value="healthcare-provider">Healthcare Provider</option>
+                    <option value="school">School/Teacher</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
 
-              <div className="form-group">
-                <label htmlFor="referralSource">How did you hear about us?</label>
-                <select
-                  id="referralSource"
-                  name="referralSource"
-                  value={formData.referralSource}
-                  onChange={handleChange}
-                >
-                  <option value="">Select an option</option>
-                  <option value="google">Google Search</option>
-                  <option value="social-media">Social Media</option>
-                  <option value="friend-family">Friend/Family Referral</option>
-                  <option value="healthcare-provider">Healthcare Provider</option>
-                  <option value="school">School/Teacher</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message <span className="required">(required)</span></label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Please describe any concerns or areas where you'd like support..."
+                    required
+                  ></textarea>
+                  <ValidationError 
+                    prefix="Message" 
+                    field="message"
+                    errors={state.errors}
+                  />
+                </div>
 
-              <div className="form-group">
-                <label htmlFor="message">Message <span className="required">(required)</span></label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows="5"
-                  placeholder="Please describe any concerns or areas where you'd like support..."
-                  required
-                ></textarea>
-              </div>
-
-              <button type="submit" className="submit-button">
-                Request Free Consultation
-              </button>
+                <button type="submit" className="submit-button" disabled={state.submitting}>
+                  {state.submitting ? 'Sending...' : 'Request Free Consultation'}
+                </button>
             </form>
+            ) : (
+              <div className="success-message">
+                <h2>Thank you for your message!</h2>
+                <p>We will get back to you within 24 hours.</p>
+                <button 
+                  className="submit-button" 
+                  onClick={() => window.location.reload()}
+                >
+                  Send Another Message
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>

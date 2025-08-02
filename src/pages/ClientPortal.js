@@ -20,9 +20,14 @@ const ClientPortal = () => {
               <p>
                 Access your secure client portal to manage appointments, view documents, and communicate with us.
               </p>
-              <button className="portal-btn">
+              <a 
+                href="https://portal.therapyappointment.com/index.cfm/public:auth?fw1pk=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="portal-btn"
+              >
                 Go to Client Portal
-              </button>
+              </a>
             </div>
           </div>
 

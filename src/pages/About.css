@@ -71,11 +71,16 @@
 }
 
 .hero-about-subtitle {
-  font-size: calc(1.3rem * var(--scale-factor));
-  font-weight: 400;
-  color: var(--about-text-light);
+  font-size: calc(1.4rem * var(--scale-factor));
+  font-weight: 500;
+  color: var(--text-color);
   line-height: 1.7;
   margin-bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  padding: calc(1.5rem * var(--scale-factor));
+  border-radius: calc(15px * var(--scale-factor));
+  box-shadow: 0 calc(8px * var(--scale-factor)) calc(20px * var(--scale-factor)) rgba(0, 0, 0, 0.1);
+  border-left: calc(4px * var(--scale-factor)) solid var(--primary-color);
 }
 
 .hero-about-accent {
@@ -156,7 +161,7 @@
 }
 
 .btn-cta:hover {
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 
 /* Features Section */
@@ -335,7 +340,8 @@
   }
   
   .hero-about-subtitle {
-    font-size: calc(1.1rem * var(--scale-factor));
+    font-size: calc(1.2rem * var(--scale-factor));
+    padding: calc(1rem * var(--scale-factor));
   }
   
   .hero-about-accent {
@@ -417,8 +423,9 @@
   }
   
   .hero-about-subtitle {
-    font-size: calc(0.95rem * var(--scale-factor));
+    font-size: calc(1rem * var(--scale-factor));
     line-height: 1.6;
+    padding: calc(0.8rem * var(--scale-factor));
   }
   
   .hero-about-accent {

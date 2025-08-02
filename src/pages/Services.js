@@ -18,7 +18,7 @@ const Services = () => {
               </p>
               <div className="intro-text bounce-in-up delay-2">
                 <p>
-                At Reach Language and Learning, our commitment to providing personalized speech, language and literacy services to children adolescents, and young adults in the DC metro area will make the difference in your child's development. Our sessions are based in the most up to date research and best practices in language development, cognition and literacy. We specialize in supporting individuals with speech-language challenges, reading and writing difficulties, executive functioning needs, and language-based learning differences.
+                  At Reach Language and Learning, our commitment to providing personalized speech, language and literacy services to children adolescents, and young adults in the DC metro area will make the difference in your child's development. Our sessions are based in the most up to date research and best practices in language development, cognition and literacy and. We specialize in supporting individuals with speech-language challenges, reading and writing difficulties, executive functioning needs, and language-based learning differences.
                 </p>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Services = () => {
             <div className="sub-header-card bounce-in-up delay-1">
               <div className="sub-header-content">
                 <p>
-                Our services are designed to meet each client where they are. Whether your child is working to build the foundational skills of reading and writing or needs support with time management and other executive functioning skills we are here to help. 
+                  Our services are designed to meet each client where they are. Whether your child is working to build the foundational skills of reading and writing or needs support with time management and other executive functioning skills we are here to help. 
                 </p>
               </div>
             </div>
@@ -118,7 +118,7 @@ const Services = () => {
                   </div>
                 </div>
                 <p>
-                  Receptive language—the ability to understand and interpret spoken language—is fundamental to learning. Our therapists work closely with clients who have difficulty processing verbal information, following directions, or grasping academic language.
+                  Receptive language is the ability to understand and interpret spoken language and is fundamental to learning. At Reach Language and Learning we work closely with clients who have difficulty processing verbal information, following directions, or grasping academic language.
                 </p>
                 <p>Our services target:</p>
                 <ul className="service-list">
@@ -128,7 +128,7 @@ const Services = () => {
                   <li>Language processing: strengthening cognitive and linguistic pathways for quicker understanding</li>
                 </ul>
                 <p>
-                  We also support students in navigating classroom language, helping them succeed in environments that require strong auditory comprehension and academic vocabulary.
+                  We also support students in navigating classroom language, helping them succeed in environments that require strong auditory comprehension and vocabulary.
                 </p>
               </div>
             </div>
@@ -157,53 +157,9 @@ const Services = () => {
                   <li>Self-monitoring: recognizing errors, adjusting behavior, and tracking progress</li>
                 </ul>
                 <p>
-                  These services are especially beneficial for students with ADHD, learning disabilities, and language-based executive functioning challenges, and are often integrated with academic or language therapy for maximum impact.
+                  These services are beneficial for students with ADHD, learning disabilities, and language-based executive functioning challenges, and are often integrated with academic and language therapy.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="section-divider gradient-divider"></div>
-
-      {/* Age Groups Section */}
-      <section className="age-groups">
-        <div className="container">
-          <div className="age-groups-header bounce-in-down delay-1">
-            <div>
-              <h2>Multilevel Support Across Age Groups</h2>
-              <p>Continuity of Care from Early Childhood to Adulthood</p>
-            </div>
-          </div>
-
-          <div className="age-groups-intro bounce-in-up delay-1">
-            <p>
-              At Reach Language and Learning, we recognize that communication, learning, and executive functioning needs
-              evolve across the lifespan. We offer flexible, developmentally appropriate support for every stage:
-            </p>
-          </div>
-
-          <div className="age-group-cards">
-            <div className="age-group-card bounce-in-left delay-1">
-              <h4>School-Age Children (Ages 5–12):</h4>
-              <p>Our team helps children strengthen reading, writing, comprehension, expressive/receptive language, and executive functioning skills needed for classroom success.</p>
-            </div>
-
-            <div className="age-group-card bounce-in-right delay-1">
-              <h4>Adolescents (Ages 13+):</h4>
-              <p>We provide support for complex academic tasks, organization, college readiness, self-advocacy, and communication for social and professional settings.</p>
-            </div>
-
-            <div className="age-group-card bounce-in-left delay-2">
-              <h4>Young Adults:</h4>
-              <p>We work with college students to enhance communication, executive functioning, and written expression.</p>
-            </div>
-
-            <div className="age-group-card bounce-in-right delay-2">
-              <h4>Parent Coaching:</h4>
-              <p>We partner with families to ensure carryover of strategies at home, empower caregivers with tools for daily routines, and build strong communication environments.</p>
             </div>
           </div>
         </div>

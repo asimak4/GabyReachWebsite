@@ -125,8 +125,7 @@ const OurProcess = () => {
                   </div>
                 </div>
                 <p>
-                  Reach offers 3, 30-minute weekly, parent sessions at the beginning of services to make sure there 
-                  is continuity of care and support at home.
+                  Reach offers 3 weeks of parent sessions lasting 30 minutes each at the onset of therapy to make sure there is continuity of care and support at home.
                 </p>
               </div>
             </div>

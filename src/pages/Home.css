@@ -232,10 +232,11 @@
 }
 
 .feature-content p {
-  color: var(--text-light);
+  color: #000000;
   line-height: 1.8;
   margin-bottom: 0;
-  font-size: calc(1.1rem * var(--scale-factor));
+  font-weight: 500;
+  font-size: calc(1.15rem * var(--scale-factor));
   position: relative;
   padding-left: calc(1.5rem * var(--scale-factor));
 }

@@ -18,7 +18,7 @@ const Services = () => {
               </p>
               <div className="intro-text bounce-in-up delay-2">
                 <p>
-                  At Reach Language and Learning, our commitment to providing personalized speech, language and literacy services to children adolescents, and young adults in the DC metro area will make the difference in your child's development. Our sessions are based in the most up to date research and best practices in language development, cognition and literacy and. We specialize in supporting individuals with speech-language challenges, reading and writing difficulties, executive functioning needs, and language-based learning differences.
+                  At Reach Language and Learning, our commitment to providing personalized speech, language and literacy services to children, adolescents, and young adults in the DC metro area will make the difference in your child's development. Our sessions are based in the most up to date research and best practices in language development, cognition and literacy. We specialize in supporting individuals with speech-language challenges, reading and writing difficulties, executive functioning needs, and language-based learning differences.
                 </p>
               </div>
             </div>
@@ -62,7 +62,7 @@ const Services = () => {
                   </div>
                 </div>
                 <p>
-                  At Reach Language and Learning, our structured literacy intervention is built upon the Science of Reading, a research-based framework that emphasizes explicit, systematic instruction in reading skills. We help students develop the core components of literacy, including:
+                  At Reach Language and Learning, our structured literacy intervention is built upon the Science of Reading, a research-based framework that emphasizes explicit, systematic instruction in reading skills and the Orton Gillingham philosophy. We help students develop the core components of literacy, including:
                 </p>
                 <ul className="service-list">
                   <li>Phonological awareness (e.g., identifying and manipulating sounds in words)</li>

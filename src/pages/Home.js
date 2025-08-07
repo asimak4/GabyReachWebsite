@@ -15,9 +15,9 @@ const Home = () => {
             <img src="/fullWithoutBackground.png" alt="Reach Language and Learning Logo" />
           </div>
           <div className="hero-text">
-            <h1 className="bounce-in-left delay-1">Language Literacy and Executive Functioning</h1>
+            <h1 className="bounce-in-left delay-1">Language, Literacy, and Executive Functioning</h1>
             <h2 className="hero-main-text bounce-in-right delay-2">
-              At <i>Reach Language and Learning</i>, we're all about helping kids, teens and young adults thrive.
+              At <i>Reach Language and Learning</i>, were all about helping kids, teens, and young adults thrive.
             </h2>
             <p className="hero-subtitle bounce-in-up delay-3">
               Reach offers personalized speech and language services specializing in language, literacy, and executive functioning. Our evidence-based approach builds on your child's strengths to support lasting growth.

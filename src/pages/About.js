@@ -30,7 +30,7 @@ const About = () => {
               <h3>Meet Gaby McLish, M.S., CCC-SLP</h3>
               <h4 style={{color: 'var(--secondary-color)', fontStyle: 'italic', marginBottom: '1.5rem'}}>Founder and Speech-Language Pathologist</h4>
               <p>
-                I'm a speech language pathologist committed to helping school-age students unlock their full potential through strong language, literacy, and executive functioning skills. I'm a native of Washington, D.C. and have vast local knowledge, clinical expertise, and an enthusiastic, individualized approach to the families and students I serve.
+                I'm a speech-language pathologist committed to helping school-age students unlock their full potential through strong language, literacy, and executive functioning skills.  I'm a native of Washington, D.C. and have extensive clinical expertise, local knowledge and an enthusiastic, individualized approach to the families and students I serve. I have been working with students in the dc metro-area for over 8 years.
               </p>
               <p>
                 I earned my Bachelor's degree in Neuroscience from Lafayette College, where I developed a curiosity about the brain and how we learn, communicate, and process information. I went on to earn my Master's degree in Speech-Language Pathology from Boston University where I had the unique opportunity to focus my clinical experience on reading, writing, language and executive functioning. At Boston University, I was introduced to the Orton Gillingham approach to reading and learned how to incorporate structured reading techniques while working at the BU clinic.

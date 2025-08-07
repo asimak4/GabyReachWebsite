@@ -35,8 +35,9 @@ const Home = () => {
             <div className="feature-content bounce-in-right delay-2">
               <h3>What we do:</h3>
               <p>
-                At Reach Language and Learning, we support our clients with the skills they need to communicate clearly, stay organized, and succeed in school. Whether your child is struggling to keep up with reading and writing, express themselves, follow directions or stay on task, we’re here to help. Reach builds on your child’s strengths to improve language, literacy, and executive functioning in ways that feel practical, engaging, and doable for both kids and families. <a href="/services" className="feature-link">(Learn more about our services)</a>
+                At Reach Language and Learning, we support our clients with the skills they need to communicate clearly, stay organized, and succeed in school. Whether your child is struggling to keep up with reading and writing, express themselves, follow directions or stay on task, we're here to help. Reach builds on your child's strengths to improve language, literacy, and executive functioning in ways that feel practical, engaging, and doable for both kids and families.
               </p>
+              <a href="/services" className="feature-link">(Learn more about our services)</a>
             </div>
 
           </div>
@@ -50,8 +51,9 @@ const Home = () => {
             <div className="feature-content bounce-in-left delay-4">
               <h3>How we help:</h3>
               <p>
-                Every session is one-on-one and tailored to your child’s unique needs. We provide a thorough review of necessary documentation and parent and child interviews to understand how we can best support your child. We draw on the Science of Reading, a deep understanding of language development, and the direct connection between language and executive functioning. Reach’s sessions are structured to be supportive, engaging and build on real-world skills that carry over into everyday life and the classroom. Whether we’re working on comprehension, writing, organization, or flexible thinking, our goal is to meet your child where they are and give them the confidence to succeed. <a href="/process" className="feature-link">(Learn more about our process)</a>
+                Every session is one-on-one and tailored to your child's unique needs. We provide a thorough review of necessary documentation and parent and child interviews to understand how we can best support your child. We draw on the Science of Reading, a deep understanding of language development, and the direct connection between language and executive functioning. Reach's sessions are structured to be supportive, engaging and build on real-world skills that carry over into everyday life and the classroom. Whether we're working on comprehension, writing, organization, or flexible thinking, our goal is to meet your child where they are and give them the confidence to succeed.
               </p>
+              <a href="/process" className="feature-link">(Learn more about our process)</a>
             </div>
           </div>
         </div>

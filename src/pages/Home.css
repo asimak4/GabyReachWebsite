@@ -231,7 +231,7 @@
   border-radius: calc(2px * var(--scale-factor));
 }
 
-.feature-content p {
+.home .feature-content p {
   color: #000000;
   line-height: 1.8;
   margin-bottom: 0;
@@ -239,6 +239,13 @@
   font-size: calc(1.15rem * var(--scale-factor));
   position: relative;
   padding-left: calc(1.5rem * var(--scale-factor));
+}
+
+.home .feature-content .feature-link {
+  display: inline-block;
+  margin-top: calc(1rem * var(--scale-factor));
+  font-size: calc(0.95rem * var(--scale-factor));
+  margin-left: calc(1.5rem * var(--scale-factor));
 }
 
 .feature-image {

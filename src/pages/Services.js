@@ -16,13 +16,17 @@ const Services = () => {
               <p className="page-subtitle bounce-in-down delay-2">
                 Empowering learners through individualized, evidence-based support
               </p>
+              <div className='extraPadding'>
               <div className="intro-text bounce-in-up delay-2">
                 <p>
                   At Reach Language and Learning, our commitment to providing personalized speech, language and literacy services to children, adolescents, and young adults in the DC metro area will make the difference in your child's development. Our sessions are based in the most up to date research and best practices in language development, cognition and literacy. We specialize in supporting individuals with speech-language challenges, reading and writing difficulties, executive functioning needs, and language-based learning differences.
                 </p>
+              </div>
+              <div className="intro-text bounce-in-up delay-2">
                 <p>
                   We offer both in person and virtual sessions and our in-person sessions are held at our Bethesda location. Consultations are held virtually through our HIPAA compliant telehealth platform. 
                 </p>
+              </div>
               </div>
             </div>
             <div className="header-image-section">
